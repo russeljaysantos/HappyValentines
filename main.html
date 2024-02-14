@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentines!</title>
+    <link rel="stylesheet" href="mstyle.css">
+    <script>
+        function changeTextAndRedirect() {
+            var button = document.querySelector('.hover');
+            var textElement = document.querySelector('.text span');
+            if (button.textContent === "Okieee! 🥰") {
+                button.textContent = "What? 🤔";
+                textElement.textContent = "I just want you to know that you're...";
+            } else {
+                // Redirect to another HTML page
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="happy-valentines">
+    <div class="valentines-day-card">
+      <div class="clouds"></div>
+      <div class="hearts">
+        <div class="heartOne">
+          <div class="left-side"></div>
+          <div class="right-side"></div>
+        </div>
+        <div class="heartTwo">
+          <div class="left-side"></div>
+          <div class="right-side"></div>
+        </div>
+        <div class="heartThree">
+          <div class="left-side"></div>
+          <div class="right-side"></div>
+        </div>
+        <div class="heartFour">
+          <div class="left-side"></div>
+          <div class="right-side"></div>
+        </div>
+        <div class="heartFive">
+          <div class="left-side"></div>
+          <div class="right-side"></div>
+        </div>
+      </div>
+      <div class="text"><span>I hope you're doing well </br>right now.</span></div>
+    </div>
+    <button class="hover" onclick="changeTextAndRedirect()">Okieee! 🥰</button>
+</div>
+</body>
+</html>
